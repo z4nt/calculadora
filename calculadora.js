@@ -1,17 +1,20 @@
+function calculadora(n1, n2, operacao) {
+    switch (operacao) {
+        case "+":
+            return n1 + n2
+        case "-":
+            return n1 - n2
+        case "*":
+            return n1 * n2
+        case "/":
+            return n1 / n2
+        default:
+            "operação inválida"
+    }
+}
 var n1 = parseFloat(prompt('Digite o primeiro número: '))
 var n2 = parseFloat(prompt('Digite o segundo número: '))
 var operacao = prompt('Digite a operação desejada')
 
-if (operacao == '+'){
-    var resultado = n1 + n2
-} else if (operacao == '-'){
-    var resultado = n1 - n2
-} else if (operacao == '*' || operacao == 'x' || operacao == 'X'){
-    var resultado = n1 * n2
-} else if(operacao == "/"){
-    var resultado = n1 / n2
-} else {
-    var resultado = "Operação invalida"
-}
-
-console.log(resultado)
+resultado = calculadora(n1,n2,operacao)
+alert(resultado)
