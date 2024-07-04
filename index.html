@@ -11,36 +11,41 @@
 </head>
 
 <body>
-  <div class="flex w-[500px] h-[500px] justify-center align-center">
+  <div class="flex w-full h-[500px] justify-center align-center">
     <div class=" bg-black text-white bg-grey w-[50]">
         <table>
             <tr>
-                <th colspan="4">Operação de Adição</th>
+                <th colspan="4">Calculadora</th>
             </tr>
             <tr>
-                <td colspan="4"><input type="text" id="display" disabled style="width: 100%; text-align: right;"></td>
+                <td colspan="4"><input type="number" id="display"  style="width: 100%; text-align: right;"></td>
             </tr>
             <tr>
-                <td><button class="num-button" onclick="addNumber('7')">7</button></td>
-                <td><button class="num-button" onclick="addNumber('8')">8</button></td>
-                <td><button class="num-button" onclick="addNumber('9')">9</button></td>
-                <td><button class="num-button" onclick="addOperator('+')">+</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addNumber('7')">*</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addNumber('7')">%</button></td>
+                <td colspan="2" ><button class="num-button w-full [50px]" onclick="addNumber('7')">-</button></td>
             </tr>
             <tr>
-                <td><button class="num-button" onclick="addNumber('4')">4</button></td>
-                <td><button class="num-button" onclick="addNumber('5')">5</button></td>
-                <td><button class="num-button" onclick="addNumber('6')">6</button></td>
-                <td rowspan="2"><button class="num-button" onclick="calcular()">=</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addNumber('7')">7</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addNumber('8')">8</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addNumber('9')">9</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addOperator('+')">+</button></td>
             </tr>
             <tr>
-                <td><button class="num-button" onclick="addNumber('1')">1</button></td>
-                <td><button class="num-button" onclick="addNumber('2')">2</button></td>
-                <td><button class="num-button" onclick="addNumber('3')">3</button></td>
+                <td><button class="num-button  w-[50px] h-[50px]" onclick="addNumber('4')">4</button></td>
+                <td><button class="num-button  w-[50px] h-[50px]" onclick="addNumber('5')">5</button></td>
+                <td><button class="num-button  w-[50px] h-[50px]" onclick="addNumber('6')">6</button></td>
+                <td rowspan="2"><button class="num-button  w-[50px] h-[50px]" onclick="calcular()">=</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button class="num-button" onclick="addNumber('0')">0</button></td>
-                <td><button class="num-button" onclick="addOperator('.')">.</button></td>
-                <td><button class="num-button" onclick="limpar()">C</button></td>
+                <td><button class="num-button  w-[50px] h-[50px]" onclick="addNumber('1')">1</button></td>
+                <td><button class="num-button  w-[50px] h-[50px]" onclick="addNumber('2')">2</button></td>
+                <td><button class="num-button  w-[50px] h-[50px]" onclick="addNumber('3')">3</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="num-button w-[50px] h-[50px]" onclick="addNumber('0')">0</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="addOperator('.')">.</button></td>
+                <td><button class="num-button w-[50px] h-[50px]" onclick="limpar()">C</button></td>
             </tr>
         </table>
     </div>
